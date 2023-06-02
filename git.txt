@@ -1,0 +1,59 @@
+
+	Se em algum momento o git não te reconhece, identifique-se para não ter problemas lá na frente...
+	No meu caso meu nome no github é rodrigojrnet e meu email é rodrigo.jrnet@gmail.com
+
+			-> git config --global user.email rodrigo.jrnet@gmail.com
+			-> git config --global user.name rodrigojrnet
+
+
+
+
+	Primeiramente você precisa criar uma pasta para seu projeto.
+	Agora entre na pasta pelo terminal e inicie o Git pelo comando:
+
+			-> git init
+
+
+	ATENÇÃO: O "git status" irá ser útil o tempo todo apontando as alterações que forem ocorrendo.
+	Crie um arquivo la dentro da pasta do seu projeto. Por exemplo "teste.c"
+
+	Se você utilizar o "git status" verá que o projeto ficou desatualizado com o novo arquivo.
+	Atualize o projeto adicionando esse novo arquivo ao projeto através do comando:
+
+			-> git add arquivo
+
+	Após adicionar o novo arquivo ele passa a fazer parte do projeto mas ainda não está ligado ao banco de dados de versão.
+	O Git é um programa que trata justamente de versionificar os projetos. Por isso toda mudança demanda tratamento de versão.
+	Esse sistema de versionamento do Git é chamado de "commits". Então você precisa "commitar" sua modificação.
+	Para "commitar" utilize o comando a seguir sendo "-m" = mensagem e o conteúdo seguinte a mensagem da versão.
+
+			-> git commit -m 'Adicionei arquivo'
+
+	
+
+
+
+	Toda modificação trará a necessidade de:
+
+			-> git add arquivo
+			-> git commit -m 'modificação'
+
+
+	OBS: você pode utilizar um "." no lugar de "arquivo" para se referir a todos os arquivos modificados ao invés de fazer o processo um por um.
+
+
+
+
+	Você pode listar todas as versões assim
+			-> git log
+
+			ou assim...
+
+			-> git log --oneline
+
+
+
+
+			
+
+	
